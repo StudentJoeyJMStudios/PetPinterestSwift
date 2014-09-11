@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 JMStudios. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
-class MainDisplayViewController: UIViewController {
+class MainDisplayViewController: UIViewController
+{
 
 }
