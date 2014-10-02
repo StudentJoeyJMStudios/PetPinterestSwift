@@ -13,9 +13,23 @@ class RegisterViewController: UIViewController
     @IBOutlet weak var registerUsername: UITextField!
     @IBOutlet weak var registerPassword: UITextField!
     
+    var buttonClickMax : Int = 1
+    
+    override func viewDidLoad()
+    {
+        buttonClickMax = 0
+    }
+    
     @IBAction func registerNewUser(sender: AnyObject)
     {
-        registerNewUser()
+        buttonClickMax++
+        
+        if (buttonClickMax == 1)
+        {
+            
+            registerNewUser()
+
+        }
     }
     
     
@@ -34,11 +48,11 @@ class RegisterViewController: UIViewController
             (succeeded: Bool!, error: NSError!) -> Void in
             if error == nil
             {
-                self.performSegueWithIdentifier("mainDisplay", sender: self)
+                self.performSegueWithIdentifier("chooseCategories", sender: self)
             }
             else
             {
-                let errorString = error.userInfo["error"] as NSString
+                //let errorString = error.userInfo["error"] as NSString
                 // Show the errorString somewhere and let the user try again.
             }
         }

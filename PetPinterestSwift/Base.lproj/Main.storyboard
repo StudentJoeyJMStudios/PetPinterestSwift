@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8nM-ar-ckd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8nM-ar-ckd">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -29,6 +29,7 @@
                         <viewControllerLayoutGuide type="bottom" id="IaP-aC-9dD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yGK-AU-l6n">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6o-3Y-sl7">
@@ -133,6 +134,7 @@
                         <viewControllerLayoutGuide type="bottom" id="huL-yy-Nvd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gcW-FI-sSC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fa4-Ty-ZVt">
@@ -206,11 +208,65 @@
                         <outlet property="registerPassword" destination="tQw-IH-mCN" id="4MX-ZK-rWe"/>
                         <outlet property="registerUsername" destination="v24-md-O33" id="Wvo-1t-Nzp"/>
                         <segue destination="dd8-xL-xnh" kind="show" identifier="mainDisplay" id="m5Y-d9-WUG"/>
+                        <segue destination="mY5-VF-dS8" kind="show" identifier="chooseCategories" id="pL1-Hq-VF4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQ9-aC-vkV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="153" y="1088"/>
+        </scene>
+        <!--Category Selection View Controller-->
+        <scene sceneID="hh3-YM-Wuc">
+            <objects>
+                <viewController id="mY5-VF-dS8" customClass="CategorySelectionViewController" customModule="PetPinterestSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="evQ-5n-h4x"/>
+                        <viewControllerLayoutGuide type="bottom" id="h0l-iP-cnx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j7Z-3J-lw0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Voe-8v-BRr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categories" id="DXd-Vn-aE9">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DXd-Vn-aE9" id="gXh-Oa-rx8">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="400" height="453"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="mY5-VF-dS8" id="iHq-g8-pSz"/>
+                                    <outlet property="delegate" destination="mY5-VF-dS8" id="hog-S3-uL3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Voe-8v-BRr"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Voe-8v-BRr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Voe-8v-BRr" id="61l-aG-G0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rUZ-VV-P4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1099.5" y="1088"/>
         </scene>
         <!--Main Display View Controller-->
         <scene sceneID="Lif-ub-Qj3">
@@ -221,6 +277,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ht1-l6-O9V"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zlz-aV-b6Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -231,6 +288,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fHF-1h-T09"/>
+        <segue reference="m5Y-d9-WUG"/>
     </inferredMetricsTieBreakers>
 </document>

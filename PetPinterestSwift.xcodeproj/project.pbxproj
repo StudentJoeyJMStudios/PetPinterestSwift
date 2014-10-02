@@ -11,6 +11,8 @@
 		ED060E4C19BFB870009B5A30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED060E4A19BFB870009B5A30 /* Main.storyboard */; };
 		ED060E4E19BFB870009B5A30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED060E4D19BFB870009B5A30 /* Images.xcassets */; };
 		ED060E5A19BFB870009B5A30 /* PetPinterestSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED060E5919BFB870009B5A30 /* PetPinterestSwiftTests.swift */; };
+		ED37C21719CDE8B2002C3FAE /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED37C21619CDE8B2002C3FAE /* DataModel.swift */; };
+		ED50BC0319CCCA3800252780 /* CategorySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED50BC0219CCCA3800252780 /* CategorySelectionViewController.swift */; };
 		EDFC882F19C1F13B00B3E307 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFC882E19C1F13B00B3E307 /* LoginViewController.swift */; };
 		EDFC883119C1F14700B3E307 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFC883019C1F14700B3E307 /* RegisterViewController.swift */; };
 		EDFC883319C1F16E00B3E307 /* MainDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFC883219C1F16E00B3E307 /* MainDisplayViewController.swift */; };
@@ -47,6 +49,8 @@
 		ED060E5319BFB870009B5A30 /* PetPinterestSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetPinterestSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED060E5819BFB870009B5A30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED060E5919BFB870009B5A30 /* PetPinterestSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetPinterestSwiftTests.swift; sourceTree = "<group>"; };
+		ED37C21619CDE8B2002C3FAE /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		ED50BC0219CCCA3800252780 /* CategorySelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorySelectionViewController.swift; sourceTree = "<group>"; };
 		EDFC882E19C1F13B00B3E307 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EDFC883019C1F14700B3E307 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EDFC883219C1F16E00B3E307 /* MainDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDisplayViewController.swift; sourceTree = "<group>"; };
@@ -121,8 +125,10 @@
 				EDFC884E19C1F6EF00B3E307 /* PetPinterestSwift-Bridging-Header.h */,
 				EDFC882E19C1F13B00B3E307 /* LoginViewController.swift */,
 				EDFC883019C1F14700B3E307 /* RegisterViewController.swift */,
+				ED37C21619CDE8B2002C3FAE /* DataModel.swift */,
 				ED060E4A19BFB870009B5A30 /* Main.storyboard */,
 				EDFC883219C1F16E00B3E307 /* MainDisplayViewController.swift */,
+				ED50BC0219CCCA3800252780 /* CategorySelectionViewController.swift */,
 				ED060E4D19BFB870009B5A30 /* Images.xcassets */,
 				ED060E4419BFB870009B5A30 /* Supporting Files */,
 			);
@@ -275,7 +281,9 @@
 				EDFC883319C1F16E00B3E307 /* MainDisplayViewController.swift in Sources */,
 				EDFC883119C1F14700B3E307 /* RegisterViewController.swift in Sources */,
 				EDFC882F19C1F13B00B3E307 /* LoginViewController.swift in Sources */,
+				ED50BC0319CCCA3800252780 /* CategorySelectionViewController.swift in Sources */,
 				ED060E4719BFB870009B5A30 /* AppDelegate.swift in Sources */,
+				ED37C21719CDE8B2002C3FAE /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

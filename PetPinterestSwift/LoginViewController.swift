@@ -14,9 +14,21 @@ class LoginViewController: UIViewController
 
     @IBOutlet weak var loginPassword: UITextField!
     
+    var buttonClickMax : Int = 1
+    
+    override func viewDidLoad()
+    {
+        getAnimalCategories()
+        buttonClickMax = 0
+    }
     @IBAction func registerNewUser(sender: AnyObject)
     {
-        performSegueWithIdentifier("registerNewUser", sender: self)
+        buttonClickMax++
+        
+        if (buttonClickMax == 1)
+        {
+            performSegueWithIdentifier("registerNewUser", sender: self)
+        }
     }
     
     
