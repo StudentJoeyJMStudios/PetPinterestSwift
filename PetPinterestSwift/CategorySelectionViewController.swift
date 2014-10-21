@@ -39,7 +39,8 @@ class CategorySelectionViewController: UIViewController, UITableViewDelegate
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "category");
         println("cell for rowindex path")
         println(categoriesOfAnimals[indexPath.row]["name"])
-        cell.textLabel?.text = categoriesOfAnimals[indexPath.row]["name"] as String
+        cell.textLabel.text = categoriesOfAnimals[indexPath.row]["name"] as String
+        
         
         return cell;
     }
@@ -49,6 +50,13 @@ class CategorySelectionViewController: UIViewController, UITableViewDelegate
         
     }
 
+    
+    @IBAction func selectAction(sender: AnyObject) {
+        println("SELECTING ACTIONS NOW")
+        println(actionsOfAnimals.count)
+        performSegueWithIdentifier("actionSelection", sender: self)
+
+    }
 
     /*
     // MARK: - Navigation

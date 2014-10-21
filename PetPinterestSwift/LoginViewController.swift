@@ -19,6 +19,7 @@ class LoginViewController: UIViewController
     override func viewDidLoad()
     {
         getAnimalCategories()
+        getAnimalActions()
         buttonClickMax = 0
     }
     @IBAction func registerNewUser(sender: AnyObject)

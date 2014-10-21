@@ -9,6 +9,9 @@
 import Foundation
 
 var categoriesOfAnimals = [AnyObject]()
+var selectedAnimals = [PFObject]()
+var actionsOfAnimals = [AnyObject]()
+var selectedActions = [PFObject]()
 
 
 func getAnimalCategories() -> ()
@@ -36,3 +39,29 @@ func getAnimalCategories() -> ()
         }
     }
 }
+
+func getAnimalActions() -> ()
+{
+    var query = PFQuery(className:"Actions")
+    
+    query.findObjectsInBackgroundWithBlock
+        {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil
+            {
+                // The find succeeded.
+                
+                // Do something with the found objects
+                
+                actionsOfAnimals = objects
+                
+                println(actionsOfAnimals)
+            }
+            else
+            {
+                // Log details of the failure
+                NSLog("Error: %@ %@", error, error.userInfo!)
+            }
+    }
+}
+

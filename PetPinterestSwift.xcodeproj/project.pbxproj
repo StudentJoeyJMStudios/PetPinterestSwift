@@ -28,6 +28,7 @@
 		EDFC884A19C1F49000B3E307 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFC884719C1F49000B3E307 /* Bolts.framework */; };
 		EDFC884B19C1F49000B3E307 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFC884819C1F49000B3E307 /* Parse.framework */; };
 		EDFC884C19C1F49000B3E307 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFC884919C1F49000B3E307 /* ParseFacebookUtils.framework */; };
+		F9AB33BC19F6C56E0027874D /* ActionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AB33BB19F6C56E0027874D /* ActionSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		EDFC884819C1F49000B3E307 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		EDFC884919C1F49000B3E307 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		EDFC884E19C1F6EF00B3E307 /* PetPinterestSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PetPinterestSwift-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		F9AB33BB19F6C56E0027874D /* ActionSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				ED060E4A19BFB870009B5A30 /* Main.storyboard */,
 				EDFC883219C1F16E00B3E307 /* MainDisplayViewController.swift */,
 				ED50BC0219CCCA3800252780 /* CategorySelectionViewController.swift */,
+				F9AB33BB19F6C56E0027874D /* ActionSelectionViewController.swift */,
 				ED060E4D19BFB870009B5A30 /* Images.xcassets */,
 				ED060E4419BFB870009B5A30 /* Supporting Files */,
 			);
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDFC883319C1F16E00B3E307 /* MainDisplayViewController.swift in Sources */,
+				F9AB33BC19F6C56E0027874D /* ActionSelectionViewController.swift in Sources */,
 				EDFC883119C1F14700B3E307 /* RegisterViewController.swift in Sources */,
 				EDFC882F19C1F13B00B3E307 /* LoginViewController.swift in Sources */,
 				ED50BC0319CCCA3800252780 /* CategorySelectionViewController.swift in Sources */,
