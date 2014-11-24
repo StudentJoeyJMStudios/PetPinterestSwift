@@ -18,10 +18,10 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F4DA204551E31EF210B5E29DDAB20898D28EE7EB</key>
-		<string>../..</string>
+		<string>../../../PetPinterestSwift</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/StudentJoeyJMStudios/PetPinterestSwift.git</string>
+	<string>github.com:StudentJoeyJMStudios/PetPinterestSwift.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -35,6 +35,14 @@
 			<string>F4DA204551E31EF210B5E29DDAB20898D28EE7EB</string>
 			<key>IDESourceControlWCCName</key>
 			<string>PetPinterestSwift</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F4DA204551E31EF210B5E29DDAB20898D28EE7EB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PetPinterestSwift-master</string>
 		</dict>
 	</array>
 </dict>

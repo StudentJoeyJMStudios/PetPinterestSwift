@@ -28,7 +28,14 @@
 		EDFC884A19C1F49000B3E307 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFC884719C1F49000B3E307 /* Bolts.framework */; };
 		EDFC884B19C1F49000B3E307 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFC884819C1F49000B3E307 /* Parse.framework */; };
 		EDFC884C19C1F49000B3E307 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFC884919C1F49000B3E307 /* ParseFacebookUtils.framework */; };
+		F96E97AA1A214BB3004D6580 /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E97A91A214BB3004D6580 /* UserAccountViewController.swift */; };
+		F96E97AD1A2156ED004D6580 /* LikedActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E97AB1A2156ED004D6580 /* LikedActionsViewController.swift */; };
+		F96E97B01A215977004D6580 /* LikedCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E97AF1A215977004D6580 /* LikedCategoriesViewController.swift */; };
+		F96E97B21A215DFC004D6580 /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E97B11A215DFC004D6580 /* RecommendationsViewController.swift */; };
+		F96E97B51A21762E004D6580 /* BoardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E97B41A21762E004D6580 /* BoardsViewController.swift */; };
+		F96E97B81A217794004D6580 /* CreateNewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96E97B71A217794004D6580 /* CreateNewPostViewController.swift */; };
 		F9AB33BC19F6C56E0027874D /* ActionSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AB33BB19F6C56E0027874D /* ActionSelectionViewController.swift */; };
+		F9B4AC3B1A2198CA004F55DA /* LostAndFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B4AC3A1A2198CA004F55DA /* LostAndFoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +75,14 @@
 		EDFC884819C1F49000B3E307 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		EDFC884919C1F49000B3E307 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		EDFC884E19C1F6EF00B3E307 /* PetPinterestSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PetPinterestSwift-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		F96E97A91A214BB3004D6580 /* UserAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
+		F96E97AB1A2156ED004D6580 /* LikedActionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedActionsViewController.swift; sourceTree = "<group>"; };
+		F96E97AF1A215977004D6580 /* LikedCategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedCategoriesViewController.swift; sourceTree = "<group>"; };
+		F96E97B11A215DFC004D6580 /* RecommendationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
+		F96E97B41A21762E004D6580 /* BoardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardsViewController.swift; sourceTree = "<group>"; };
+		F96E97B71A217794004D6580 /* CreateNewPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewController.swift; sourceTree = "<group>"; };
 		F9AB33BB19F6C56E0027874D /* ActionSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSelectionViewController.swift; sourceTree = "<group>"; };
+		F9B4AC3A1A2198CA004F55DA /* LostAndFoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LostAndFoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +144,13 @@
 				ED37C21619CDE8B2002C3FAE /* DataModel.swift */,
 				ED060E4A19BFB870009B5A30 /* Main.storyboard */,
 				EDFC883219C1F16E00B3E307 /* MainDisplayViewController.swift */,
+				F96E97A91A214BB3004D6580 /* UserAccountViewController.swift */,
+				F96E97B11A215DFC004D6580 /* RecommendationsViewController.swift */,
+				F96E97AB1A2156ED004D6580 /* LikedActionsViewController.swift */,
+				F96E97B41A21762E004D6580 /* BoardsViewController.swift */,
+				F9B4AC3A1A2198CA004F55DA /* LostAndFoundViewController.swift */,
+				F96E97AF1A215977004D6580 /* LikedCategoriesViewController.swift */,
+				F96E97B71A217794004D6580 /* CreateNewPostViewController.swift */,
 				ED50BC0219CCCA3800252780 /* CategorySelectionViewController.swift */,
 				F9AB33BB19F6C56E0027874D /* ActionSelectionViewController.swift */,
 				ED060E4D19BFB870009B5A30 /* Images.xcassets */,
@@ -281,13 +302,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F96E97B01A215977004D6580 /* LikedCategoriesViewController.swift in Sources */,
+				F96E97B21A215DFC004D6580 /* RecommendationsViewController.swift in Sources */,
 				EDFC883319C1F16E00B3E307 /* MainDisplayViewController.swift in Sources */,
+				F96E97AD1A2156ED004D6580 /* LikedActionsViewController.swift in Sources */,
 				F9AB33BC19F6C56E0027874D /* ActionSelectionViewController.swift in Sources */,
 				EDFC883119C1F14700B3E307 /* RegisterViewController.swift in Sources */,
+				F9B4AC3B1A2198CA004F55DA /* LostAndFoundViewController.swift in Sources */,
 				EDFC882F19C1F13B00B3E307 /* LoginViewController.swift in Sources */,
+				F96E97B81A217794004D6580 /* CreateNewPostViewController.swift in Sources */,
 				ED50BC0319CCCA3800252780 /* CategorySelectionViewController.swift in Sources */,
+				F96E97AA1A214BB3004D6580 /* UserAccountViewController.swift in Sources */,
 				ED060E4719BFB870009B5A30 /* AppDelegate.swift in Sources */,
 				ED37C21719CDE8B2002C3FAE /* DataModel.swift in Sources */,
+				F96E97B51A21762E004D6580 /* BoardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

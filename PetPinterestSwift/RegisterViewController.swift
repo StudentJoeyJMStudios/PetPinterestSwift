@@ -26,9 +26,7 @@ class RegisterViewController: UIViewController
         
         if (buttonClickMax == 1)
         {
-            
             registerNewUser()
-
         }
     }
     

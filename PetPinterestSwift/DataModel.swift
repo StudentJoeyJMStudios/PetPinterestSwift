@@ -12,7 +12,7 @@ var categoriesOfAnimals = [AnyObject]()
 var selectedAnimals = [PFObject]()
 var actionsOfAnimals = [AnyObject]()
 var selectedActions = [PFObject]()
-
+var recommendations = [PFObject]()
 
 func getAnimalCategories() -> ()
 {
@@ -23,18 +23,11 @@ func getAnimalCategories() -> ()
         (objects: [AnyObject]!, error: NSError!) -> Void in
         if error == nil
         {
-            // The find succeeded.
-           
-            // Do something with the found objects
-            
             categoriesOfAnimals = objects
-            
             println(categoriesOfAnimals)
-            
         }
         else
         {
-            // Log details of the failure
             NSLog("Error: %@ %@", error, error.userInfo!)
         }
     }
@@ -45,23 +38,37 @@ func getAnimalActions() -> ()
     var query = PFQuery(className:"Actions")
     
     query.findObjectsInBackgroundWithBlock
-        {
+    {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil
             {
-                // The find succeeded.
-                
-                // Do something with the found objects
-                
                 actionsOfAnimals = objects
-                
                 println(actionsOfAnimals)
             }
             else
             {
-                // Log details of the failure
                 NSLog("Error: %@ %@", error, error.userInfo!)
             }
     }
 }
 
+
+func getRecommendations() -> ()
+{
+    var user = PFUser.currentUser()
+    var relation = user.relationForKey("Recommendations")
+    
+    relation.query().findObjectsInBackgroundWithBlock
+        {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil
+            {
+                recommendations = objects as [PFObject]
+                println(recommendations)
+            }
+            else
+            {
+                NSLog("Error: %@ %@", error, error.userInfo!)
+            }
+    }
+}
